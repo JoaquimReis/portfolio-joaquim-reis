@@ -471,9 +471,17 @@
       font-size: 0.64rem;
       text-align: right;
       text-transform: uppercase;
-    }
+      transition: color 180ms ease;}
 
-    .project-link strong { display: block; margin-top: 14px; color: var(--orange); font-size: 1.5rem; }
+    .project-link strong {
+      display: block;
+      margin-top: 14px;
+      color: var(--orange);
+      font-size: 1.5rem;}
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      color: var(--orange);}
 
     .experience-layout {
       display: grid;
@@ -860,32 +868,37 @@
 
       <div class="section-heading" data-reveal>
         <h2 id="projects-title">Projetos e estudos de caso.</h2>
-        <p>Os espaços abaixo estão prontos para receber seus repositórios, métricas e demonstrações assim que forem publicados no GitHub.</p>
+        <p>Projetos com código, documentação, metodologia e resultados disponíveis no GitHub.</p>
       </div>
 
       <div class="project-list">
-        <!-- PROJETO 1: troque o conteúdo e transforme .project-link em um link <a href="URL_DO_REPOSITORIO"> -->
+        <!-- PROJETO 1: RUR -->
         <article class="project-card" data-reveal>
-          <div class="project-meta"><span>01</span><p>Case em preparação</p></div>
+          <div class="project-meta"><span>01</span><p>Pesquisa metodológica</p></div>
           <div class="project-content">
-            <h3>Previsão de faturamento</h3>
-            <p>Espaço reservado para um projeto end-to-end de previsão: do tratamento dos dados à validação temporal e comunicação dos resultados.</p>
-            <div class="project-stack"><span>R</span><span>Séries temporais</span><span>Forecasting</span></div>
+            <h3>Reflected Unit Rayleigh ARMA</h3>
+            <p>Desenvolvimento do modelo RUR-ARMA para séries temporais com valores no intervalo unitário. O projeto inclui funções
+            de estimação, simulações de Monte Carlo e aplicações voltadas à análise de taxas e proporções.</p>
+            <div class="project-stack"><span>R</span><span>Séries temporais</span><span>ARMA</span><span>Distribuição Unitária</span></div>
           </div>
-          <span class="project-link">Adicionar repositório <strong aria-hidden="true">↗</strong></span>
+          <a class="project-link" href="https://github.com/JoaquimReis/Reflected-Unit-Rayleigh-ARMA" target="_blank" rel="noreferrer" aria-label="Abrir repositório do modelo Reflected Unit Rayleigh ARMA">
+          Ver repositório <strong aria-hidden="true">↗</strong></a>
         </article>
 
-        <!-- PROJETO 2: troque o conteúdo e transforme .project-link em um link <a href="URL_DO_REPOSITORIO"> -->
+        <!-- PROJETO 2: sobrevivencia -->
         <article class="project-card" data-reveal>
-          <div class="project-meta"><span>02</span><p>Case em preparação</p></div>
+          <div class="project-meta"><span>01</span><p>Projeto aplicado</p></div>
           <div class="project-content">
-            <h3>Modelagem de séries unitárias</h3>
-            <p>Espaço para apresentar a pesquisa em distribuições unitárias, estrutura ARMA, metodologia e resultados reproduzíveis.</p>
-            <div class="project-stack"><span>R</span><span>Estatística</span><span>ARMA</span></div>
-          </div>
-          <span class="project-link">Adicionar repositório <strong aria-hidden="true">↗</strong></span>
+            <h3>Análise de sobrevivência: tempo até a graduação</h3>
+            <p>Análise do tempo até a graduação de estudantes de Direito em universidades federais da Região Sul do Brasil, utilizando
+            microdados do Censo da Educação Superior. O estudo inclui estimação de Kaplan-Meier, teste log-rank e comparação de modelos paramétricos de sobrevivência.</p>
+            <div class="project-stack"><span>R</span><span>Análise de sobrevivência</span><span>Kaplan-Meier</span><span>Modelos paramétricos</span></div>
+        </div>
+          <a class="project-link" href="https://github.com/JoaquimReis/survival_analysis_law_students" target="_blank" rel="noreferrer" aria-label="Abrir repositório da análise de sobrevivência">
+          Ver repositório <strong aria-hidden="true">↗</strong></a>
         </article>
 
+        
         <!-- PROJETO 3: troque o conteúdo e transforme .project-link em um link <a href="URL_DO_REPOSITORIO"> -->
         <article class="project-card" data-reveal>
           <div class="project-meta"><span>03</span><p>Case em preparação</p></div>
