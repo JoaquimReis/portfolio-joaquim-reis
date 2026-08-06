@@ -139,7 +139,7 @@
       position: absolute;
       z-index: -3;
       width: min(72vw, 1050px);
-      aspect-ratio: 1.1;
+      aspect-ratio: 11 / 10;
       filter: saturate(0.92);
       opacity: 0.82;
     }
@@ -640,7 +640,7 @@
       right: -18%;
       bottom: -55%;
       width: min(78vw, 1100px);
-      aspect-ratio: 1;
+      aspect-ratio: 1 / 1;
       border-radius: 54% 46% 38% 62% / 48% 35% 65% 52%;
       background: radial-gradient(ellipse at 52% 48%,
         var(--orange) 0 7%, var(--vermillion) 7.5% 12%,
@@ -815,8 +815,8 @@
         <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> Portfólio profissional · 2026</p>
         <h1 id="hero-title">Joaquim <span>Silvestre Reis</span></h1>
         <p class="hero-role">Graduando em Estatística · UFSM</p>
-        <div class="hero-tools" aria-label="Principais ferramentas">
-          <span>R</span><span>Python</span><span>SQL</span><span>Power BI</span><span>DAX</span><span>Excel</span>
+        <div class="hero-tools" role="list" aria-label="Principais ferramentas">
+          <span role="listitem">R</span><span role="listitem">Python</span><span role="listitem">SQL</span><span role="listitem">Power BI</span><span role="listitem">DAX</span><span role="listitem">Excel</span>
         </div>
 
         <div class="hero-bottom">
@@ -830,11 +830,11 @@
       <p class="hero-location">Santa Maria, RS · Brasil</p>
     </section>
 
-    <section class="section about" id="sobre">
+    <section class="section about" id="sobre" aria-labelledby="about-title">
       <div class="section-label" data-reveal><span>01</span><p>Sobre</p></div>
 
       <div class="about-copy" data-reveal>
-        <p class="lead">Perfil profissional e áreas de interesse.</p>
+        <h2 class="lead" id="about-title">Perfil profissional e áreas de interesse.</h2>
         <div class="about-columns">
           <p>Graduando em Estatística pela UFSM, com experiência no desenvolvimento de soluções de Business Intelligence, análise de dados e modelagem estatística em contextos acadêmicos e empresariais.</p>
           <p>Interesses técnicos em séries temporais, previsão, automação de processos analíticos, visualização de dados e aplicação de métodos estatísticos a problemas reais.</p>
@@ -857,9 +857,9 @@
         <article data-reveal><span class="card-index">D</span><h3>Dados & automação</h3><p>Extração, transformação e organização de dados com SQL, R e Python para análises confiáveis e reproduzíveis.</p></article>
       </div>
 
-      <div class="skills-row" data-reveal aria-label="Competências técnicas">
-        <span>Python</span><span>R</span><span>SQL</span><span>Power BI</span><span>DAX</span><span>Excel</span>
-        <span>Séries temporais</span><span>Modelagem estatística</span><span>ETL</span><span>LaTeX</span>
+      <div class="skills-row" data-reveal role="list" aria-label="Competências técnicas">
+        <span role="listitem">Python</span><span role="listitem">R</span><span role="listitem">SQL</span><span role="listitem">Power BI</span><span role="listitem">DAX</span><span role="listitem">Excel</span>
+        <span role="listitem">Séries temporais</span><span role="listitem">Modelagem estatística</span><span role="listitem">ETL</span><span role="listitem">LaTeX</span>
       </div>
     </section>
 
@@ -887,7 +887,7 @@
 
         <!-- PROJETO 2: sobrevivencia -->
         <article class="project-card" data-reveal>
-          <div class="project-meta"><span>01</span><p>Projeto aplicado</p></div>
+          <div class="project-meta"><span>02</span><p>Projeto aplicado</p></div>
           <div class="project-content">
             <h3>Análise de sobrevivência: tempo até a graduação</h3>
             <p>Análise do tempo até a graduação de estudantes de Direito em universidades federais da Região Sul do Brasil, utilizando
@@ -940,7 +940,7 @@
       <div class="presentation-list">
         <details class="presentation-item" data-reveal>
           <summary>
-            <span class="event-year">2026</span><h3>XVII CLAPEM</h3><p class="event-location">Montevidéu, Uruguai</p><span class="event-toggle" aria-hidden="true">+</span>
+            <span class="event-year">2026</span><h3>XVII CLAPEM</h3><span class="event-location">Montevidéu, Uruguai</span><span class="event-toggle" aria-hidden="true">+</span>
           </summary>
           <div class="presentation-details">
             <img src="assets/clapem.jpeg" alt="Apresentação no XVII CLAPEM">
@@ -950,7 +950,7 @@
 
         <details class="presentation-item" data-reveal>
           <summary>
-            <span class="event-year">2025</span><h3>40ª Jornada Acadêmica Integrada</h3><p class="event-location">Santa Maria, RS</p><span class="event-toggle" aria-hidden="true">+</span>
+            <span class="event-year">2025</span><h3>40ª Jornada Acadêmica Integrada</h3><span class="event-location">Santa Maria, RS</span><span class="event-toggle" aria-hidden="true">+</span>
           </summary>
           <div class="presentation-details">
             <img src="assets/jai.jpeg" alt="Apresentação na 40ª JAI">
@@ -960,7 +960,7 @@
 
         <details class="presentation-item" data-reveal>
           <summary>
-            <span class="event-year">2025</span><h3>2º Southstat Meeting</h3><p class="event-location">Santa Maria, RS</p><span class="event-toggle" aria-hidden="true">+</span>
+            <span class="event-year">2025</span><h3>2º Southstat Meeting</h3><span class="event-location">Santa Maria, RS</span><span class="event-toggle" aria-hidden="true">+</span>
           </summary>
           <div class="presentation-details">
             <img src="assets/southstat.jpeg" alt="Apresentação no 2º Southstat Meeting">
@@ -970,7 +970,7 @@
 
         <details class="presentation-item" data-reveal>
           <summary>
-            <span class="event-year">2024</span><h3>V JMMA</h3><p class="event-location">Santa Maria, RS</p><span class="event-toggle" aria-hidden="true">+</span>
+            <span class="event-year">2024</span><h3>V JMMA</h3><span class="event-location">Santa Maria, RS</span><span class="event-toggle" aria-hidden="true">+</span>
           </summary>
           <div class="presentation-details">
             <img src="assets/jmma.jpeg" alt="Apresentação na V JMMA">
@@ -990,7 +990,7 @@
         <a href="mailto:jsreis.stat@gmail.com">E-mail <span aria-hidden="true">↗</span></a>
         <a href="https://linkedin.com/in/joaquim-s-reis" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         <!-- GITHUB: substitua o elemento abaixo por <a href="SEU_LINK_GITHUB">GitHub <span>↗</span></a> -->
-        <span>GitHub em breve</span>
+        <a href="https://github.com/JoaquimReis" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
